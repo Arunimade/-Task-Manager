@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#task-input input, #task-input select, #task-input button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+#task-input input, #task-input select {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#task-input button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#task-input button:hover {
+    background-color: #cc0000;
+}
+
+#task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background-color: #ffcc00;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li.high {
+    border-left: 5px solid #ff0000;
+}
+
+#task-list li.medium {
+    border-left: 5px solid #ffcc00;
+}
+
+#task-list li.low {
+    border-left: 5px solid #00ff00;
+}
+
+.task-actions button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-actions button:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
